@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html data-theme="light">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" type="image/x-icon" href="download (1).jpg">
+
+    <title>Phone Hunter</title>
+</head>
+
+<body> 
+    <header class="flex justify-center gap-4 py-3">
+        <input  id="search-field" type="text" placeholder="search for phone brand" class="input input-bordered 
+            input-secondary w-full max-w-xs" />
+        <button onclick="search()" class="btn btn-success">Search</button>
+    </header>
+
+    <section>
+        <div class=" grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3" id="phone-container">
+
+        </div>
+    </section>
+
+<div id="more" class=" hidden">
+    <button class="btn btn-warning">Show more</button>
+</div>
+
+<!-- modal -->
+
+<dialog id="show_details_modal" class="justify-center min-w-full text-center modal modal-bottom sm:modal-middle">
+  <div id="modal" class="modal-box">
+    
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+
+    <script src="java.js"></script>
+</body>
+
+</html>
